@@ -1,0 +1,50 @@
+%clase de texto matemático
+% Clase del documento
+\documentclass[a5paper, 10pt]{article}
+
+% Paquetes
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[top=2cm, left=2cm]{geometry}
+\usepackage{amsmath, amssymb, amsfonts, latexsym}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{nicefrac}
+
+% Comandos
+\parindent = 0mm
+
+\author{Andrea Chumaña}
+
+\title{Estrucutra de texto matemático}
+
+\date{\today}
+
+% Contenido
+
+\begin{document}
+\maketitle
+La optimización de funciones no es un tema analizado únicamente con herramientas del cálculo en una variable y de la programación lineal. Esta se puede generalizar a espacios más generales como son los espacios de Banach. A continuación se presenta el siguiente problema de optimización:
+\begin{align}
+\text{mín J(u,y,a)} =
+\int_{0}^{\text {a}} \left(u^{'}(x)\right)^2 \, \text{dx} + \int_{0}^{\text {a}} y(x)^2 \, \text{dx} +
+\dfrac{\text{a}^2}{\text{med}(0, \text{a}, \text{a}^2)},
+\end{align}
+\begin{center}
+sujeta a 
+ \begin{equation*}
+\left\lbrace
+\begin{array}{ll}
+\text{-u}^{''} + \alpha (x) \text{u}(x)= y(x) \quad \text{en (0, a)},\\
+\text{u}= 0	\qquad  \text{en} \big\{0, \text{a}\big\},\\
+	\displaystyle \lim_{x\to 0} y(x)= \text{a},\\
+	\text{a} \geq 4. 
+\end{array}
+\right.
+\end{equation*}
+\end{center}
+
+La idea es optimizar sobre el conjunto de funciones de cada intervalo de la forma \([0,\text{a}]\)y determinar en el valor de \(\text{a} \geq 4\) que indique el mejor intervalo de trabajo.
+ 
+\end{document}
