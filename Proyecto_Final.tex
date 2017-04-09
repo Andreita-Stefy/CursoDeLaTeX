@@ -1,0 +1,112 @@
+% Clase del documento
+\documentclass[a4paper, 10pt]{article}
+
+% Paquetes
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-nolayout, es-nodecimaldot, es-tabla]{babel}
+\usepackage[top=2cm, left=2cm, right=5cm]{geometry}
+\usepackage{amsmath, amssymb, amsfonts, latexsym}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{nicefrac}
+\usepackage[x11names,table]{xcolor}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{url}
+
+
+% Comandos
+\parindent = 00mm
+\title{ESCUELA POLITÉCNICA NACIONAL}
+\author{FACULTAD DE CIENCIAS}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{itemize}
+ \item Nombre: Andrea Chumaña
+       \begin{itemize}
+        \item Proyecto Final de Latex.
+         \item Ejercicio de Complementos de Cálculo.
+     \end{itemize}
+\end{itemize}
+\section{Ejercicio}
+
+{\color{magenta} Suponga que exite un índice \(n_0\in \mathbb{N}\) y  un número real \( K\) mayor que 0 tal que
+\[ X_n > K
+\]
+\(\forall n > n_0\), que existe  un índice \(n \geq n_0 \), existe un índice \(n_1\) tal que
+\[Y_n < 0
+\]
+\(\forall n > n_0\), y que la sucesión de término general \(y_n\) converge a 0.
+Demuestre que la sucesión de término general
+\[\dfrac{X_n}{Y_n} \rightarrow -\infty\]}
+
+\subsection*{Demostración}
+Supongamos que
+\begin{align*}
+\text{Existe}\quad n_0 \in \mathbb{N} \quad \text{y que} 
+\quad K > 0 \quad \text{tal que}&
+\end{align*}
+\begin{equation}
+X_n\geq K \qquad \forall n \geq n_0,
+\end{equation}
+\begin{equation*}
+\text{Existe} \quad n_1 \in \mathbb{N} \quad \text{tal que}\quad \forall n \geq n_1
+\end{equation*}
+\begin{equation}
+Yn < 0
+\end{equation}
+\\
+\begin{equation}
+Yn\rightarrow 0
+\end{equation}
+
+Para esto supongamos que 
+\begin{equation}
+M < 0 \\
+\end{equation}
+
+Vamos a demostrar que existe \(n \in \mathbb{N}\) tal que \( \forall n \geq n_2\)\\
+\begin{equation*}
+\dfrac{X_n}{Y_n} < M
+\end{equation*}
+De (1) junto con (4) tenemos 
+\begin{equation}
+\dfrac{-K}{M} > 0 ;
+\end{equation}
+
+Así, de (3), existe \(n_3 \in \mathbb{N}\) tal que \(\forall n \geq n_3 \)\\
+\begin{equation}
+|y_n - 0 | < \dfrac{-K}{M}
+\end{equation}
+Sí
+\( n_4 = \text{máx} \lbrace n_1,n_3 \rbrace \)
+entonces, \(\forall n\geq n_4 ;\)
+\begin{equation*}
+Y_n < 0
+\end{equation*}
+y
+\begin{equation*}
+|y_n - 0 | = |y_n| = - y_n < \dfrac{-K}{M};
+\end{equation*}
+es decir\\
+\begin{equation}
+\dfrac{-1}{Y_n}> \dfrac{-M}{K} \qquad \forall n\geq  n_4
+\end{equation}
+Finalmente, sì
+\begin{center}
+\(n_2 = \text{máx} \lbrace n_0,n_4 \rbrace ,\)
+\end{center}
+tenemos que \(\forall n\geq n_2\), se verifica (7)y (1)tenemos
+\begin{equation*}
+\dfrac{-X_n}{Y_n}> \dfrac{-M \cdot K}{K};
+\end{equation*}
+es decir 
+\begin{equation*}
+\dfrac{X_n}{Y_n} < M \qquad \forall n \geq n_2
+\end{equation*}
+\begin{flushright}
+\textsc{como queríamos demostrar}
+\end{flushright}
+\end{document}
